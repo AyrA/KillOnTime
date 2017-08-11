@@ -13,7 +13,7 @@ Any children of the killed process will be left running.
 - **exe**: required, exe file to start
 - **args**: optional, arguments for the executable
 
-Use `/?` to get more help,especially regarding the exit codes.
+Use `/?` to get more help, especially regarding the exit codes.
 
 ## Finding exe files
 
@@ -25,4 +25,6 @@ This means that you should use `xyz.exe` and not just `xyz`
 ## Executing Console Applications
 
 If you execute a console application it will not open a new console window but instead use the current window.
-At the time of writing there is no argument to change that. You can change `UseShellExecute=true` to `false` if you need it this way.
+At the time of writing there is no argument to change that.
+You can change `UseShellExecute=false` to `true` to spawn a new window for console applications.
+GUI Applications will always spawn their window.
